@@ -1,0 +1,240 @@
+package com.suning.crawler.site;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.slf4j.Logger;
+
+import com.suning.crawler.core.CrawlerController;
+import com.suning.crawler.core.CrawlerWorker;
+import com.suning.crawler.core.helper.XMLWriter;
+import com.suning.crawler.core.URLRetriver.URLResultResource;
+import com.suning.crawler.core.helper.XMLWriter.BufferDocWriter;
+
+public class CrawlerJDMobileCommentsNoTag extends CrawlerWorker {
+	
+	public CrawlerJDMobileCommentsNoTag(String crawlerName) {
+		super(crawlerName);
+	}
+	
+	public void htmlInformationRetriver(String url, String html, Document htmlDoc, Logger logger, XMLWriter xmlWriter) {
+
+		/*
+		TBD: pageTypeDetect basing on XMLCfg
+		*/
+		
+		//product list page detection		
+		Elements results = htmlDoc.select("div.pic > a[href]");
+		logger.info("Products links: " + results.size());
+		if (results.size() == 0) {
+			//non product list page, just traverse link topo
+			//linkWidthTraverse(htmlDoc);
+			return;
+		}
+		
+		String category = crawlerHelper.purifyStringRegex(htmlDoc.title(), "- 京东手机版");
+		
+		logger.info("Processing Product List Page: " + url);
+		for (Element link: results) {
+			
+			if(CrawlerController.quitFlag)
+				break;
+			
+			String linkHref = link.attr("abs:href");
+						
+			if((CrawlerController.pageFileManager.isVisited(linkHref) == false) && 
+					(linkHref.indexOf("product") != -1))	{		
+				logger.info("Processing Product Page: " + linkHref);
+				parsingProductPage(linkHref, category, logger, xmlWriter);
+			} else { 
+				synchronized(this) {
+					//seeds.add(linkHref);
+					//totalPages++;
+				}
+			}
+		}
+		
+		//linkWidthTraverse(htmlDoc);
+	}
+	
+	public void parsingProductPage(String url, String category, Logger logger, XMLWriter xmlWriter) {
+		//To support multiple thread, write all things to temporary buffer, and
+		//write the whole doc to file in once when this url is fully processed
+		BufferDocWriter bufWriter = xmlWriter.newBufferDocWriter();
+		String productid_str = null;
+		
+		{
+			URLResultResource urlresult = distributedURLRetriver.getUrlSource(url);
+			if(urlresult == null) {
+				logger.info("Document get error: " + url);
+				return;
+			}
+
+			String html = urlresult.html;
+						
+			bufWriter.write("<product>");
+			bufWriter.printNode("product_url", url);
+			
+			org.jsoup.nodes.Document doc = Jsoup.parse(html, url);
+	
+			//product ID
+			Element productid = doc.select("div[style]").first();
+			if(productid != null) {
+				if(productid.text().length() > 6) {
+					productid_str = productid.text().substring(6, productid.text().length());
+					bufWriter.printNode("product_id", productid_str);
+				}
+				else
+					logger.info("Wrong Product ID extracted" + productid.text());
+			}
+	
+			//product title
+			Element element = doc.select("title").first();
+			if(element != null) {
+				String title = element.text();
+				bufWriter.printNode("title", 
+					crawlerHelper.purifyStringRegex(title, "- 京东手机版"));
+			}
+	
+			//Product Description	
+			Element elementdesc = doc.select("div.m3 > div.mc").first();
+			if(element != null) {
+				String desc = elementdesc.text();
+				bufWriter.printNode("product_desc", desc);
+			}
+			
+			//Product icon	
+			Element elementIcon = doc.select("div.p-img > a > img").first();
+			if(elementIcon != null)
+				bufWriter.printNode("icon", elementIcon.attr("src"));
+			else
+				logger.info("No Icon found: " + url);
+			
+			//Get price information
+			Element price = doc.select("div.p-price > font").first();
+			if(productid != null)
+				bufWriter.printNode("price", price.text());
+			
+			html = null;
+		}
+
+		//Image Information
+		{
+			String imageurl = "http://www.jd.com/bigimage.aspx?id=" + productid_str;
+			URLResultResource urlresult = distributedURLRetriver.getUrlSource(imageurl);
+			if(urlresult == null) {
+				logger.info("Product document get error: " + imageurl);
+				return;
+			}
+
+			String imghtml = urlresult.html;
+			org.jsoup.nodes.Document imgdoc = Jsoup.parse(imghtml, imageurl);		
+	
+			Element imgElement = imgdoc.select("div#biger img").first();
+			if(imgElement != null)
+				bufWriter.printNode("bigimg", imgElement.attr("src"));
+			else
+				logger.info("No image found: " + imageurl);
+			imghtml = null;
+		}
+
+				
+		//To get all the comments
+		{
+			String reviewurl = "http://club.jd.com/review/" + productid_str + "-0-" + 1 + "-0.html";
+			
+			logger.info(reviewurl);
+			URLResultResource urlresult = distributedURLRetriver.getUrlSource(reviewurl);
+			if(urlresult == null) {
+				logger.info("Comment first page get error: " + reviewurl);
+				return;
+			}
+			String html = urlresult.html;
+			Document doc = Jsoup.parse(html, reviewurl);
+			
+			//To find how many comments page available
+			String comment_pages = null;
+			//if There is no next shown, then no comments more than 1 page
+			int comment_pages_num = 1;
+			Elements nextPageElements = doc.select("div.clearfix.m div.pagin.fr a.next");
+			if(nextPageElements != null) {	
+				Element nextPageElement = nextPageElements.first();
+				if(nextPageElement != null) {
+					Element lastNumberPageElement = nextPageElement.previousElementSibling();
+					if(lastNumberPageElement != null)
+						comment_pages = lastNumberPageElement.text();
+				}
+	
+				if(comment_pages != null ) {
+					if(comment_pages.length() <= 3)
+						comment_pages_num = new Integer(comment_pages).intValue();
+					else
+						comment_pages_num = new Integer(comment_pages.substring(3, comment_pages.length())).intValue();
+				}
+			} 
+				
+			logger.info("comment_pages: \"" + comment_pages + "\" " + comment_pages_num);
+			
+			//To browse all the comment pages
+			bufWriter.write("<comments>");
+			for(int p=1; p<comment_pages_num && p<30; p++) {
+	
+				if(CrawlerController.quitFlag)
+					break;
+				
+				reviewurl = "http://club.jd.com/review/" + productid_str + "-0-" + p + "-0.html";
+				
+				logger.info("To get review info from: " + reviewurl);
+				urlresult = distributedURLRetriver.getUrlSource(reviewurl);
+				if(urlresult == null) {
+					logger.info("Comments document get error: " + reviewurl);
+					continue;
+				}
+				html = urlresult.html;
+				doc = Jsoup.parse(html, reviewurl);
+				
+				Elements comments = doc.select("div.item");
+				if(comments != null) {
+					for(Element c : comments) {
+						bufWriter.write("<comment>");
+						
+						//user
+						Element userElement = c.select("div.user div.u-name > a").first();
+						if(userElement != null)
+							bufWriter.printNode("user_url", userElement.attr("href"));	
+						else {
+							/*
+							userElement = c.select("div.user div.u-name").first();
+							if(userElement != null)
+								bufWriter.printNode("user_name", userElement.text());	
+							else
+							*/
+								logger.info("No comments user found @: " + reviewurl);
+						}
+						
+						
+						//comments
+						if(userElement != null) {
+							Element usrCommentElement = c.select("div.i-item div.comment-content").first();
+							if(usrCommentElement != null)
+								bufWriter.printNode("learn", usrCommentElement.text());	
+							else
+								logger.info("No comments found @: " + reviewurl);
+						}
+						
+						bufWriter.write("</comment>");
+					}			
+				}
+			}
+			
+			bufWriter.write("</comments>");
+		}
+		
+		bufWriter.write("</product>");
+		
+		//File can be rolled over to new one if the size is bigger than threshold at this point
+		xmlWriter.write(bufWriter.getDoc(), true, "</docs>", "<docs>");
+	}
+	
+}

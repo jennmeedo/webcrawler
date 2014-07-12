@@ -1,0 +1,353 @@
+03:41:41.445 376  [main] INFO  WebCrawlerExpres - Write to file: <?xml version='1.0' encoding='UTF-8'?> 
+03:41:41.450 381  [main] INFO  WebCrawlerExpres - Write to file: <docs> 
+03:41:41.450 381  [main] INFO  WebCrawlerExpres - Write to file: <Version> 1.0.0 </Version> 
+03:41:41.450 381  [main] INFO  CrawlerController - Deseralizing Page Index File 
+03:41:41.451 382  [main] INFO  CrawlerController - ./var/PageFileIndex.ser doesn't exist! 
+03:41:41.451 382  [main] INFO  CrawlerController - Any key to exit 
+03:41:41.452 383  [Site Thread: WebCrawlerExpres] INFO  WebCrawlerExpres - Crawler: <WebCrawlerExpres> Seeds queue empty, there maybe new seeds from work thread, or 'x' to exit 
+03:41:46.453 5384 [Site Thread: WebCrawlerExpres] INFO  WebCrawlerExpres - Crawler: <WebCrawlerExpres> Seeds queue empty, there maybe new seeds from work thread, or 'x' to exit 
+03:41:51.453 10384 [Site Thread: WebCrawlerExpres] INFO  WebCrawlerExpres - Crawler: <WebCrawlerExpres> Seeds queue empty, there maybe new seeds from work thread, or 'x' to exit 
+03:42:19.341 375  [main] INFO  CrawlerExpress - Write to file: <?xml version='1.0' encoding='UTF-8'?> 
+03:42:19.346 380  [main] INFO  CrawlerExpress - Write to file: <docs> 
+03:42:19.346 380  [main] INFO  CrawlerExpress - Write to file: <Version> 1.0.0 </Version> 
+03:42:19.347 381  [main] INFO  CrawlerController - Deseralizing Page Index File 
+03:42:19.347 381  [main] INFO  CrawlerController - ./var/PageFileIndex.ser doesn't exist! 
+03:42:19.347 381  [main] INFO  CrawlerController - Any key to exit 
+03:42:19.349 383  [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Crawler: <CrawlerExpress> Seeds queue empty, there maybe new seeds from work thread, or 'x' to exit 
+03:42:24.349 5383 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Crawler: <CrawlerExpress> Seeds queue empty, there maybe new seeds from work thread, or 'x' to exit 
+03:42:29.350 10384 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Crawler: <CrawlerExpress> Seeds queue empty, there maybe new seeds from work thread, or 'x' to exit 
+03:43:29.081 376  [main] INFO  CrawlerExpress - Write to file: <?xml version='1.0' encoding='UTF-8'?> 
+03:43:29.085 380  [main] INFO  CrawlerExpress - Write to file: <docs> 
+03:43:29.085 380  [main] INFO  CrawlerExpress - Write to file: <Version> 1.0.0 </Version> 
+03:43:29.086 381  [main] INFO  CrawlerController - Deseralizing Page Index File 
+03:43:29.086 381  [main] INFO  CrawlerController - ./var/PageFileIndex.ser doesn't exist! 
+03:43:29.087 382  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-1.html 
+03:43:29.087 382  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-2.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-3.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-4.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-5.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-6.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-7.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-8.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-9.html 
+03:43:29.088 383  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-10.html 
+03:43:29.089 384  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-11.html 
+03:43:29.089 384  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-12.html 
+03:43:29.089 384  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-13.html 
+03:43:29.089 384  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-14.html 
+03:43:29.089 384  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-15.html 
+03:43:29.089 384  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-16.html 
+03:43:29.089 384  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-17.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-18.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-19.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-20.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-21.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-22.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-23.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-24.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-25.html 
+03:43:29.090 385  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-26.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-27.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-28.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-29.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-30.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-31.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-32.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-33.html 
+03:43:29.091 386  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-34.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-35.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-36.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-37.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-38.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-39.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-40.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-41.html 
+03:43:29.092 387  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-42.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-43.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-44.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-45.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-46.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-47.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-48.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-49.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-50.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-51.html 
+03:43:29.093 388  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-52.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-53.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-54.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-55.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-56.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-57.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-58.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-59.html 
+03:43:29.094 389  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-60.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-61.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-62.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-63.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-64.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-65.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-66.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-67.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-68.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-69.html 
+03:43:29.095 390  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-70.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-71.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-72.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-73.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-74.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-75.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-76.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-77.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-78.html 
+03:43:29.096 391  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-79.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-80.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-81.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-82.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-83.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-84.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-85.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-86.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-87.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-88.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-89.html 
+03:43:29.097 392  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-90.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-91.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-92.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-93.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-94.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-95.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-96.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-97.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-98.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-99.html 
+03:43:29.098 393  [main] INFO  CrawlerExpress - Seed: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-100.html 
+03:43:29.098 393  [main] INFO  CrawlerController - Any key to exit 
+03:43:29.100 395  [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Crawler: <CrawlerExpress> is crawling Link:http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-1.html 
+03:43:29.100 395  [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-1.html 
+03:43:29.979 1274 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:29.979 1274 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=UTF-8 
+03:43:30.591 1886 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:UTF-8 
+03:43:30.902 2197 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head>    <title> ???? - ?????</title>	<meta 
+03:43:31.159 2454 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Products links: 15 
+03:43:31.161 2456 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Processing Product List Page: http://m.jd.com/products/1620-1621-1626-0-0-0-0-0-0-0-1-1-1.html 
+03:43:31.161 2456 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Processing Product Page: http://m.jd.com/product/602697.html 
+03:43:31.162 2457 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://m.jd.com/product/602697.html 
+03:43:31.899 3194 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:31.900 3195 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=UTF-8 
+03:43:32.636 3931 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:UTF-8 
+03:43:32.639 3934 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head>    <title> ?? ????????????100%?1.5/1. 
+03:43:32.653 3948 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product> 
+03:43:32.653 3948 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_url>http://m.jd.com/product/602697.html</product_url> 
+03:43:32.671 3966 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_id>602697</product_id> 
+03:43:32.672 3967 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <title>?? ????????????100%?1.5/1.8?? - ?????</title> 
+03:43:32.676 3971 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_desc>????Virtual show????Product Information ?????????????????????40S??????1.5/1.8???????230*200 ??250*230 ??48*74*2????2.1kg ????Products Exhibition????Product Details????Materials????Selling Point????Kindly Remind????Brand Introduction ???????? ......</product_desc> 
+03:43:32.677 3972 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <icon>http://img10.360buyimg.com/n2/3375/8cbef2dd-db98-4d52-ac53-d7e9c608bce7.jpg!q50.jpg</icon> 
+03:43:32.678 3973 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <price>¥149.00</price> 
+03:43:32.679 3974 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://www.jd.com/bigimage.aspx?id=602697 
+03:43:32.744 4039 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=gbk 
+03:43:32.850 4145 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:32.880 4175 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Typ 
+03:43:32.908 4203 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <bigimg>http://img10.360buyimg.com/n0/3375/8cbef2dd-db98-4d52-ac53-d7e9c608bce7.jpg</bigimg> 
+03:43:32.909 4204 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - http://club.jd.com/review/602697-0-1-0.html 
+03:43:32.909 4204 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://club.jd.com/review/602697-0-1-0.html 
+03:43:33.882 5177 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html; charset=gbk 
+03:43:35.086 6381 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:36.419 7714 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE HTML><html><head>    <meta charset="gb2312">    <title>????????????????????? ???? - ??</title>    <script>var jdpts=new Object();jdpts._st=new Date().getTime();</script>	<meta name="descrip 
+03:43:36.655 7950 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - comment_pages: "null" 1 
+03:43:36.655 7950 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <comments> 
+03:43:36.655 7950 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </comments> 
+03:43:36.655 7950 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </product> 
+03:43:36.655 7950 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to file: <product>
+<product_url>http://m.jd.com/product/602697.html</product_url>
+<product_id>602697</product_id>
+<title>?? ????????????100%?1.5/1.8?? - ?????</title>
+<product_desc>????Virtual show????Product Information ?????????????????????40S??????1.5/1.8???????230*200 ??250*230 ??48*74*2????2.1kg ????Products Exhibition????Product Details????Materials????Selling Point????Kindly Remind????Brand Introduction ???????? ......</product_desc>
+<icon>http://img10.360buyimg.com/n2/3375/8cbef2dd-db98-4d52-ac53-d7e9c608bce7.jpg!q50.jpg</icon>
+<price>¥149.00</price>
+<bigimg>http://img10.360buyimg.com/n0/3375/8cbef2dd-db98-4d52-ac53-d7e9c608bce7.jpg</bigimg>
+<comments>
+</comments>
+</product>
+ 
+03:43:36.656 7951 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Processing Product Page: http://m.jd.com/product/1133930512.html 
+03:43:36.656 7951 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://m.jd.com/product/1133930512.html 
+03:43:37.355 8650 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:37.355 8650 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=UTF-8 
+03:43:37.969 9264 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:UTF-8 
+03:43:37.971 9266 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head>    <title> ????? ??????? ?????? ????? 
+03:43:37.983 9278 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product> 
+03:43:37.983 9278 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_url>http://m.jd.com/product/1133930512.html</product_url> 
+03:43:37.994 9289 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_id>1133930512</product_id> 
+03:43:37.995 9290 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <title>????? ??????? ?????? ????????? ???? ?? 1.8m(6??)? - ?????</title> 
+03:43:37.997 9292 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_desc>? ? ??? ???? ???? ???? ??*1???*1????*2 ???? ......</product_desc> 
+03:43:37.998 9293 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <icon>http://img12.360buyimg.com/n2/jfs/t193/149/443958301/601847/a52d4d21/538d8621N87f3750d.jpg!q50.jpg</icon> 
+03:43:37.999 9294 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <price>¥299.00</price> 
+03:43:37.999 9294 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://www.jd.com/bigimage.aspx?id=1133930512 
+03:43:38.091 9386 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=gbk 
+03:43:38.199 9494 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:38.199 9494 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Typ 
+03:43:38.210 9505 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <bigimg>http://img10.360buyimg.com/n0/jfs/t193/149/443958301/601847/a52d4d21/538d8621N87f3750d.jpg</bigimg> 
+03:43:38.210 9505 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - http://club.jd.com/review/1133930512-0-1-0.html 
+03:43:38.210 9505 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://club.jd.com/review/1133930512-0-1-0.html 
+03:43:38.577 9872 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html; charset=gbk 
+03:43:39.522 10817 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:40.323 11618 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE HTML><html><head>    <meta charset="gb2312">    <title>????? ??????? ?????? ????????? ???? ?? 1.8m(6??)?????????? ??????? ?????? ????????? ???? ?? 1.8m(6??)???? ???? - ??</title>    <script 
+03:43:40.481 11776 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - comment_pages: "null" 1 
+03:43:40.482 11777 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <comments> 
+03:43:40.482 11777 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </comments> 
+03:43:40.482 11777 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </product> 
+03:43:40.482 11777 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to file: <product>
+<product_url>http://m.jd.com/product/1133930512.html</product_url>
+<product_id>1133930512</product_id>
+<title>????? ??????? ?????? ????????? ???? ?? 1.8m(6??)? - ?????</title>
+<product_desc>? ? ??? ???? ???? ???? ??*1???*1????*2 ???? ......</product_desc>
+<icon>http://img12.360buyimg.com/n2/jfs/t193/149/443958301/601847/a52d4d21/538d8621N87f3750d.jpg!q50.jpg</icon>
+<price>¥299.00</price>
+<bigimg>http://img10.360buyimg.com/n0/jfs/t193/149/443958301/601847/a52d4d21/538d8621N87f3750d.jpg</bigimg>
+<comments>
+</comments>
+</product>
+ 
+03:43:40.482 11777 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Processing Product Page: http://m.jd.com/product/1113576.html 
+03:43:40.482 11777 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://m.jd.com/product/1113576.html 
+03:43:41.445 12740 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:41.445 12740 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=UTF-8 
+03:43:42.569 13864 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:UTF-8 
+03:43:42.571 13866 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head>    <title> LOVO ????????? ????????1.8 
+03:43:42.583 13878 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product> 
+03:43:42.583 13878 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_url>http://m.jd.com/product/1113576.html</product_url> 
+03:43:42.589 13884 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_id>1113576</product_id> 
+03:43:42.590 13885 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <title>LOVO ????????? ????????1.8???? - ?????</title> 
+03:43:42.592 13887 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_desc>LOVO ?? ????????? ???????? 40*40S 128*70 ......</product_desc> 
+03:43:42.593 13888 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <icon>http://img30.360buyimg.com/n2/g17/M00/02/17/rBEbSVNy2U0IAAAAAATLwPoy9tMAAAvDgISBycABMvY035.jpg!q50.jpg</icon> 
+03:43:42.594 13889 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <price>¥299.00</price> 
+03:43:42.594 13889 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://www.jd.com/bigimage.aspx?id=1113576 
+03:43:43.120 14415 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:43.120 14415 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=gbk 
+03:43:43.436 14731 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:43.437 14732 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Typ 
+03:43:43.449 14744 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <bigimg>http://img10.360buyimg.com/n0/g17/M00/02/17/rBEbSVNy2U0IAAAAAATLwPoy9tMAAAvDgISBycABMvY035.jpg</bigimg> 
+03:43:43.449 14744 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - http://club.jd.com/review/1113576-0-1-0.html 
+03:43:43.449 14744 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://club.jd.com/review/1113576-0-1-0.html 
+03:43:43.798 15093 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:43.798 15093 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html; charset=gbk 
+03:43:45.399 16694 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:46.803 18098 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE HTML><html><head>    <meta charset="gb2312">    <title>LOVO?????????????LOVO???????????? ???? - ??</title>    <script>var jdpts=new Object();jdpts._st=new Date().getTime();</script>	<meta n 
+03:43:46.923 18218 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - comment_pages: "null" 1 
+03:43:46.924 18219 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <comments> 
+03:43:46.924 18219 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </comments> 
+03:43:46.924 18219 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </product> 
+03:43:46.924 18219 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to file: <product>
+<product_url>http://m.jd.com/product/1113576.html</product_url>
+<product_id>1113576</product_id>
+<title>LOVO ????????? ????????1.8???? - ?????</title>
+<product_desc>LOVO ?? ????????? ???????? 40*40S 128*70 ......</product_desc>
+<icon>http://img30.360buyimg.com/n2/g17/M00/02/17/rBEbSVNy2U0IAAAAAATLwPoy9tMAAAvDgISBycABMvY035.jpg!q50.jpg</icon>
+<price>¥299.00</price>
+<bigimg>http://img10.360buyimg.com/n0/g17/M00/02/17/rBEbSVNy2U0IAAAAAATLwPoy9tMAAAvDgISBycABMvY035.jpg</bigimg>
+<comments>
+</comments>
+</product>
+ 
+03:43:46.925 18220 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Processing Product Page: http://m.jd.com/product/1020381415.html 
+03:43:46.925 18220 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://m.jd.com/product/1020381415.html 
+03:43:48.085 19380 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:48.085 19380 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=UTF-8 
+03:43:48.997 20292 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:UTF-8 
+03:43:48.999 20294 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head>    <title> ??Happy?? ???? 100%?? ???? 
+03:43:49.011 20306 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product> 
+03:43:49.012 20307 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_url>http://m.jd.com/product/1020381415.html</product_url> 
+03:43:49.018 20313 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_id>1020381415</product_id> 
+03:43:49.018 20313 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <title>??Happy?? ???? 100%?? ????200X230CM??? ???? 1.5/1.8x2.0???? - ?????</title> 
+03:43:49.020 20315 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_desc></product_desc> 
+03:43:49.021 20316 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <icon>http://img20.360buyimg.com/n2/g13/M00/0B/04/rBEhVFIxTCwIAAAAAAK5YTHynk4AADEPAEZ7JcAArl5336.jpg!q50.jpg</icon> 
+03:43:49.022 20317 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <price>¥138.00</price> 
+03:43:49.022 20317 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://www.jd.com/bigimage.aspx?id=1020381415 
+03:43:49.556 20851 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:49.557 20852 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=gbk 
+03:43:49.943 21238 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:49.944 21239 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Typ 
+03:43:49.954 21249 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <bigimg>http://img10.360buyimg.com/n0/g13/M00/0B/04/rBEhVFIxTCwIAAAAAAK5YTHynk4AADEPAEZ7JcAArl5336.jpg</bigimg> 
+03:43:49.955 21250 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - http://club.jd.com/review/1020381415-0-1-0.html 
+03:43:49.955 21250 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://club.jd.com/review/1020381415-0-1-0.html 
+03:43:50.421 21716 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html; charset=gbk 
+03:43:51.806 23101 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:52.762 24057 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE HTML><html><head>    <meta charset="gb2312">    <title>??Happy?? ???? 100%?? ????200X230CM??? ???? 1.5/1.8x2.0??????????Happy?? ???? 100%?? ????200X230CM??? ???? 1.5/1.8x2.0??????? ???? - ? 
+03:43:53.288 24583 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - comment_pages: "null" 1 
+03:43:53.288 24583 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <comments> 
+03:43:53.289 24584 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </comments> 
+03:43:53.289 24584 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </product> 
+03:43:53.289 24584 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to file: <product>
+<product_url>http://m.jd.com/product/1020381415.html</product_url>
+<product_id>1020381415</product_id>
+<title>??Happy?? ???? 100%?? ????200X230CM??? ???? 1.5/1.8x2.0???? - ?????</title>
+<product_desc></product_desc>
+<icon>http://img20.360buyimg.com/n2/g13/M00/0B/04/rBEhVFIxTCwIAAAAAAK5YTHynk4AADEPAEZ7JcAArl5336.jpg!q50.jpg</icon>
+<price>¥138.00</price>
+<bigimg>http://img10.360buyimg.com/n0/g13/M00/0B/04/rBEhVFIxTCwIAAAAAAK5YTHynk4AADEPAEZ7JcAArl5336.jpg</bigimg>
+<comments>
+</comments>
+</product>
+ 
+03:43:53.289 24584 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Processing Product Page: http://m.jd.com/product/1141800928.html 
+03:43:53.289 24584 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://m.jd.com/product/1141800928.html 
+03:43:54.104 25399 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:54.104 25399 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=UTF-8 
+03:43:55.061 26356 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:UTF-8 
+03:43:55.062 26357 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head>    <title> ???????? ????????????? 1.5 
+03:43:55.074 26369 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product> 
+03:43:55.075 26370 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_url>http://m.jd.com/product/1141800928.html</product_url> 
+03:43:55.079 26374 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_id>1141800928</product_id> 
+03:43:55.079 26374 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <title>???????? ????????????? 1.5/1.8?? ???-? 1.5-1.8???? - ?????</title> 
+03:43:55.081 26376 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_desc>   </product_desc> 
+03:43:55.082 26377 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <icon>http://img11.360buyimg.com/n2/jfs/t169/56/1735693631/355675/3ac9b485/53b648d4N1f23d14c.jpg!q50.jpg</icon> 
+03:43:55.082 26377 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <price>¥135.00</price> 
+03:43:55.082 26377 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://www.jd.com/bigimage.aspx?id=1141800928 
+03:43:55.403 26698 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:55.403 26698 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=gbk 
+03:43:55.778 27073 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:55.780 27075 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Typ 
+03:43:55.791 27086 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <bigimg>http://img10.360buyimg.com/n0/jfs/t169/56/1735693631/355675/3ac9b485/53b648d4N1f23d14c.jpg</bigimg> 
+03:43:55.791 27086 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - http://club.jd.com/review/1141800928-0-1-0.html 
+03:43:55.791 27086 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://club.jd.com/review/1141800928-0-1-0.html 
+03:43:56.098 27393 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html; charset=gbk 
+03:43:56.684 27979 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:43:58.167 29462 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE HTML><html><head>    <meta charset="gb2312">    <title>???????? ????????????? 1.5/1.8?? ???-? 1.5-1.8???????????????? ????????????? 1.5/1.8?? ???-? 1.5-1.8??????? ???? - ??</title>    <scri 
+03:43:58.245 29540 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - comment_pages: "null" 1 
+03:43:58.246 29541 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <comments> 
+03:43:58.246 29541 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </comments> 
+03:43:58.246 29541 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: </product> 
+03:43:58.246 29541 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to file: <product>
+<product_url>http://m.jd.com/product/1141800928.html</product_url>
+<product_id>1141800928</product_id>
+<title>???????? ????????????? 1.5/1.8?? ???-? 1.5-1.8???? - ?????</title>
+<product_desc>   </product_desc>
+<icon>http://img11.360buyimg.com/n2/jfs/t169/56/1735693631/355675/3ac9b485/53b648d4N1f23d14c.jpg!q50.jpg</icon>
+<price>¥135.00</price>
+<bigimg>http://img10.360buyimg.com/n0/jfs/t169/56/1735693631/355675/3ac9b485/53b648d4N1f23d14c.jpg</bigimg>
+<comments>
+</comments>
+</product>
+ 
+03:43:58.246 29541 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Processing Product Page: http://m.jd.com/product/1022119150.html 
+03:43:58.246 29541 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://m.jd.com/product/1022119150.html 
+03:43:58.963 30258 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Content Length Error, -1! 
+03:43:58.964 30259 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=UTF-8 
+03:43:59.765 31060 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:UTF-8 
+03:43:59.767 31062 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head>    <title> ???? ??????????????? ??-?  
+03:43:59.779 31074 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product> 
+03:43:59.780 31075 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_url>http://m.jd.com/product/1022119150.html</product_url> 
+03:43:59.783 31078 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_id>1022119150</product_id> 
+03:43:59.784 31079 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <title>???? ??????????????? ??-? 1.5?1.8???? - ?????</title> 
+03:43:59.785 31080 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <product_desc></product_desc> 
+03:43:59.786 31081 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <icon>http://img10.360buyimg.com/n2/jfs/t145/320/85574609/304317/2fa1e958/537ec766N2245feb5.jpg!q50.jpg</icon> 
+03:43:59.786 31081 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <price>¥119.00</price> 
+03:43:59.787 31082 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://www.jd.com/bigimage.aspx?id=1022119150 
+03:44:01.002 32297 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html;charset=gbk 
+03:44:01.362 32657 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 
+03:44:01.363 32658 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Content:<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Typ 
+03:44:01.371 32666 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Write to buf: <bigimg>http://img10.360buyimg.com/n0/jfs/t145/320/85574609/304317/2fa1e958/537ec766N2245feb5.jpg</bigimg> 
+03:44:01.371 32666 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - http://club.jd.com/review/1022119150-0-1-0.html 
+03:44:01.371 32666 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - To downloading page: http://club.jd.com/review/1022119150-0-1-0.html 
+03:44:01.798 33093 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - contentType: text/html; charset=gbk 
+03:44:02.672 33967 [Site Thread: CrawlerExpress] INFO  CrawlerExpress - Page Charset should be:gb2312 

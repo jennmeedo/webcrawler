@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CrawlerConfiguration>
+
+	<!-- Initial URL seeds to start the crawling -->
+	<!-- For ScopeSeed, one INTEGER variant is supported in the URL pattern -->
+	<URLSeeds>
+
+		<ScopeSeed	Prefix="http://m.jd.com/products/1672-2615-9186-0-0-0-0-0-0-0-1-1-" VarStart="1"  VarEnd="100"  Suffix=".html"> </ScopeSeed>
+
+	</URLSeeds>
+	
+	<!-- Those information will be used to limit where the crawler can go -->
+	<!-- Operator: Regex, IndexOf -->	
+	<!-- Type: Inclusive, Exclusive -->
+	<ULRTraverseConstraints>
+		<URLPattern  Name="Rule1" 	Expression="jd.com"  					Operator="Regex" 	LogicType="Inclusive">	</URLPattern>
+		<URLPattern  Name="Rule2" 	Expression=".apk"  						Operator="IndexOf" 	LogicType="Exclusive">	</URLPattern>
+		<URLPattern  Name="Rule3" 	Expression=".exe"  						Operator="IndexOf" 	LogicType="Exclusive">	</URLPattern>
+		<URLPattern  Name="Rule4" 	Expression=".zip"  						Operator="IndexOf" 	LogicType="Exclusive">	</URLPattern>
+		<URLPattern  Name="Rule5" 	Expression=".7z"  						Operator="IndexOf" 	LogicType="Exclusive">	</URLPattern>
+		<URLPattern  Name="Rule6" 	Expression=".rar"  						Operator="IndexOf" 	LogicType="Exclusive">	</URLPattern>
+		<URLPattern  Name="Rule7" 	Expression="suning.com"  				Operator="IndexOf" 	LogicType="Exclusive">	</URLPattern>
+		<URLPattern  Name="Rule8" 	Expression="suning(.)*?(\.com){1}?"  	Operator="Regex" 	LogicType="Exclusive">	</URLPattern>
+	</ULRTraverseConstraints>
+	
+</CrawlerConfiguration>
