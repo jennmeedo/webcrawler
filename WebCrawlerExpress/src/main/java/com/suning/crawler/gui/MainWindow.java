@@ -69,7 +69,7 @@ public class MainWindow extends JFrame {
 				FilenameFilter textFilter = new FilenameFilter() {
 					public boolean accept(File dir, String name) {
 						String lowercaseName = name.toLowerCase();
-						if (lowercaseName.contains("crawler")) {
+						if (lowercaseName.contains("crawler")&& lowercaseName.endsWith(".xml")) {
 							return true;
 						} else {
 							return false;
