@@ -1,4 +1,5 @@
 package com.suning.crawler.gui;
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -6,18 +7,21 @@ import java.awt.GridBagLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SpringLayout;
 import javax.swing.border.Border;
 
 
 public class LeftPanel extends JPanel {
 
 	private JLabel statusLabel;
-	private JTextField statusValueTextField;
+	private JTextArea statusValueTextField;
 	private JLabel speedLabel;
-	private JTextField speedValueTextField;
+	private JTextArea speedValueTextField;
 	private JLabel seedLabel;
-	private JTextField seedValueTextField;
+	private JTextArea seedValueTextField;
 	
 	
 	
@@ -33,7 +37,7 @@ public class LeftPanel extends JPanel {
 	private void intializeSizeAndBorder() {
 		// TODO Auto-generated method stub
 		Dimension dim  = getPreferredSize();
-		dim.width = 200;
+		dim.width = 300;
 		setPreferredSize(dim);
 	
 		Border inner = BorderFactory.createTitledBorder("Crawler Statistics");
@@ -46,59 +50,60 @@ public class LeftPanel extends JPanel {
 	private void addControls() {
 		// TODO Auto-generated method stub
 		statusLabel = new JLabel("Status: ");
-		statusValueTextField = new JTextField(10);
+		statusValueTextField = new JTextArea(2, 20);
+		JScrollPane one = new JScrollPane(statusValueTextField,JScrollPane.VERTICAL_SCROLLBAR_NEVER,JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+//		Dimension dim = statusValueTextField.getPreferredSize();
+//		dim.width = 40;		
+//		statusValueTextField.setPreferredSize(dim);
 		
 		speedLabel = new JLabel("Speed: ");
-		speedValueTextField = new JTextField(10);
+		speedValueTextField = new JTextArea(2, 20);
+		JScrollPane two = new JScrollPane(speedValueTextField,JScrollPane.VERTICAL_SCROLLBAR_NEVER,JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		
-		seedLabel = new JLabel("Seed: ");
-		seedValueTextField = new JTextField(10);
+		seedLabel = new JLabel("   Seed: ");
+		seedValueTextField = new  JTextArea(2, 20);
+		JScrollPane three = new JScrollPane(seedValueTextField,JScrollPane.VERTICAL_SCROLLBAR_NEVER,JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		
+		SpringLayout layout = new SpringLayout();
+	    setLayout(layout);
 	
-		setLayout(new GridBagLayout());
-		GridBagConstraints gc = new GridBagConstraints();
-		
-		gc.gridx = 0;
-		gc.gridy = 0;
-		gc.weightx = 1;
-		gc.weighty = .1;
-		gc.fill = GridBagConstraints.NONE;
-		gc.anchor = GridBagConstraints.LINE_END;
-		
-		add(statusLabel,gc);
-		
-		gc.gridx = 1;
-		gc.gridy = 0;
-		gc.anchor = GridBagConstraints.LINE_START;
-		add(statusValueTextField,gc);
-		
-		gc.gridx = 0;
-		gc.gridy = 1;
-		gc.anchor = GridBagConstraints.LINE_END;
-		add(speedLabel,gc);
-		
-		
-		gc.gridx = 1;
-		gc.gridy = 1;
-		gc.anchor = GridBagConstraints.LINE_START;
-		add(speedValueTextField,gc);
-		
-		gc.gridx = 0;
-		gc.gridy = 2;
-		gc.weightx = 1;
-		gc.weighty = 5;
-		gc.anchor = GridBagConstraints.FIRST_LINE_END;
-		add(seedLabel,gc);
-		
-		gc.gridx = 1;
-		gc.gridy = 2;
-		gc.anchor = GridBagConstraints.FIRST_LINE_START;
-		add(seedValueTextField,gc);
+	    add(statusLabel);
+	    add(one);
+	    layout.putConstraint(SpringLayout.WEST, statusLabel, 0, SpringLayout.WEST, this);
+	    layout.putConstraint(SpringLayout.NORTH, statusLabel, 25, SpringLayout.NORTH, this);
+	    layout.putConstraint(SpringLayout.NORTH, one, 25, SpringLayout.NORTH, this);
+	    layout.putConstraint(SpringLayout.WEST, one, 0, SpringLayout.EAST, statusLabel); 
+	    
+	    add(seedLabel);
+	    add(three);
+	    layout.putConstraint(SpringLayout.WEST, seedLabel, 0, SpringLayout.WEST, this);
+	    layout.putConstraint(SpringLayout.NORTH, seedLabel, 80, SpringLayout.NORTH, this);
+	    layout.putConstraint(SpringLayout.NORTH, three, 80, SpringLayout.NORTH, this);
+	    layout.putConstraint(SpringLayout.WEST, three, 0, SpringLayout.EAST, seedLabel);
+	    
+	    add(speedLabel);
+	    add(two);
+	    layout.putConstraint(SpringLayout.WEST, speedLabel, 0, SpringLayout.WEST, this);
+	    layout.putConstraint(SpringLayout.NORTH, speedLabel, 135, SpringLayout.NORTH, this);
+	    layout.putConstraint(SpringLayout.NORTH, two, 135, SpringLayout.NORTH, this);
+	    layout.putConstraint(SpringLayout.WEST, two, 0, SpringLayout.EAST, speedLabel); 
 		
 		
 		
-		
-		
-		
+	}
+
+
+	public JTextArea getStatusValueTextField() {
+		return statusValueTextField;
+	}
+
+
+	public JTextArea getSpeedValueTextField() {
+		return speedValueTextField;
+	}
+
+
+	public JTextArea getSeedValueTextField() {
+		return seedValueTextField;
 	}
 }

@@ -13,9 +13,11 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import com.suning.crawler.core.CrawlerController;
-import com.suning.crawler.helper.CrawlerStartEvent;
 import com.suning.crawler.helper.ParamsListener;
+import com.suning.crawler.helper.StopListener;
 import com.suning.crawler.helper.StringListener;
+import com.suning.crawler.helper.event.CrawlerStartEvent;
+import com.suning.crawler.helper.event.CrawlerStopEvent;
 
 
 public class MainWindow extends JFrame {
@@ -111,14 +113,46 @@ public class MainWindow extends JFrame {
 				lowerPanel.getTextArea().append("Template Name = " + templateName + "\n");
 				lowerPanel.getTextArea().append("Template ID = " + templateID + "\n");
 				controller = new CrawlerController(templateName, templateID);
-				controller.addListener(new StringListener()
+				controller.addLoggerListener(new StringListener()
 				{
 					public void textEmitted(String text) {
 						lowerPanel.getTextArea().append(text + "\n");	
 					}
 				});
+				
+				controller.addSpeedListener(new StringListener()
+				{
+					public void textEmitted(String text) {
+						leftPanel.getSpeedValueTextField().setText(text);	
+					}
+				});
+				
+//				controller.addSeedListener(new StringListener()
+//				{
+//					public void textEmitted(String text) {
+//						leftPanel.getSeedValueTextField().setText(text);
+//					}
+//				});
+				
+				controller.addStatusListener(new StringListener()
+				{
+					public void textEmitted(String text) {
+						leftPanel.getStatusValueTextField().setText(text);	
+					}
+				});
 				controllerThread = new Thread(controller);
 				controllerThread.start();
+			}
+		});
+		
+		rightPanel.setStopListener(new StopListener() {
+			
+			@Override
+			public void crawlerStopEventOccured(CrawlerStopEvent e) {
+				// TODO Auto-generated method stub
+				controllerThread = null;
+				controller.stopProcessing();
+				
 			}
 		});
 	}

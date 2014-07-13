@@ -32,7 +32,10 @@ public class XMLWriter {
 	}
 	
 	private void initNewFile() {
-		
+		if(file != null)
+		{
+			file.delete();
+		}
 		file = new File(getFileName());
 		charset = Charset.forName("UTF-8");
 		try {

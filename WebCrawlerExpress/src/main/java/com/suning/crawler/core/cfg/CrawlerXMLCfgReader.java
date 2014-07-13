@@ -13,6 +13,7 @@ import org.dom4j.Element;
 import org.slf4j.Logger;
 
 import com.suning.crawler.core.CrawlerController;
+import com.suning.crawler.helper.StringListener;
 
 /*
  *  dom4j's popular functions
@@ -30,6 +31,7 @@ import com.suning.crawler.core.CrawlerController;
 public class CrawlerXMLCfgReader {
 	Logger logger;
 	Document xmlDoc;
+	StringListener listener;
 	
 	public CrawlerXMLCfgReader(String xmlFileName, Logger logger) {
 		
@@ -79,6 +81,7 @@ public class CrawlerXMLCfgReader {
 					if(seedStr.length() > 0)
 						seedsSet.add(seedStr);
 					logger.info("Seed: " + seedStr );
+					//listener.textEmitted(seedStr);
 				}		
 			} else if(seedName.equals("SimpleSeed")) {
 				String seedStr = seedElement.getText();
@@ -125,5 +128,10 @@ public class CrawlerXMLCfgReader {
 		}
 
 		return set;
+	}
+	
+	public void setSeedListener(StringListener listener)
+	{
+		this.listener = listener;
 	}
 }

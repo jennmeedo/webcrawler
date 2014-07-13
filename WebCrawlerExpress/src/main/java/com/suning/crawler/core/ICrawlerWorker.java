@@ -4,6 +4,7 @@ import org.jsoup.nodes.Document;
 import org.slf4j.Logger;
 
 import com.suning.crawler.core.helper.XMLWriter;
+import com.suning.crawler.helper.StringListener;
 
 public interface ICrawlerWorker {
 
@@ -24,4 +25,8 @@ public interface ICrawlerWorker {
 	
 	public String getCrawlerWorkerName();
 	public CrawlerStatus getCrawlerStatus();
+	public void addLoggerListener(StringListener listener);
+	public void addStatusListener(StringListener listener);
+	public void addSpeedListener(StringListener listener);
+	public void addSeedListener(StringListener listener);
 }

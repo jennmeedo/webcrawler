@@ -11,11 +11,13 @@ import com.suning.crawler.core.CrawlerWorker;
 import com.suning.crawler.core.helper.XMLWriter;
 import com.suning.crawler.core.URLRetriver.URLResultResource;
 import com.suning.crawler.core.helper.XMLWriter.BufferDocWriter;
+import com.suning.crawler.helper.StringListener;
 
 public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 	
 	public CrawlerJDMobileProductCommentsWithTag(String crawlerName) {
 		super(crawlerName);
+		cfgRuleEngine.setSeedListener(seedListener);
 	}
 	
 	public void htmlInformationRetriver(String url, String html, Document htmlDoc, Logger logger, XMLWriter xmlWriter) {
@@ -27,6 +29,9 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 		//product list page detection		
 		Elements results = htmlDoc.select("div.pic > a[href]");
 		logger.info("Products links: " + results.size());
+		loggerListener.textEmitted("Products links: " + results.size());
+		statusListener.textEmitted(this.getCrawlerStatus().toString());
+		speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 		if (results.size() == 0) {
 			//non product list page, just traverse link topo
 			//linkWidthTraverse(htmlDoc);
@@ -36,6 +41,9 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 		String category = crawlerHelper.purifyStringRegex(htmlDoc.title(), "- 京东手机版");
 		
 		logger.info("Processing Product List Page: " + url);
+		loggerListener.textEmitted("Processing Product List Page: " + url);
+		statusListener.textEmitted(this.getCrawlerStatus().toString());
+		speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 		for (Element link: results) {
 			
 			if(CrawlerController.quitFlag)
@@ -46,6 +54,8 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 			if((CrawlerController.pageFileManager.isVisited(linkHref) == false) && 
 					(linkHref.indexOf("product") != -1))	{		
 				logger.info("Processing Product Page: " + linkHref);
+				statusListener.textEmitted(this.getCrawlerStatus().toString());
+				speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 				parsingProductPage(linkHref, category, logger, xmlWriter);
 			} else { 
 				synchronized(this) {
@@ -68,6 +78,9 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 			URLResultResource urlresult = distributedURLRetriver.getUrlSource(url);
 			if(urlresult == null) {
 				logger.info("Product document get error: " + url);
+				statusListener.textEmitted(this.getCrawlerStatus().toString());
+				loggerListener.textEmitted("Product document get error: " + url);
+				speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 				return;
 			}
 			String html = urlresult.html;
@@ -85,7 +98,12 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 					bufWriter.printNode("product_id", productid_str);
 				}
 				else
+				{
 					logger.info("Wrong Product ID extracted" + productid.text());
+					statusListener.textEmitted(this.getCrawlerStatus().toString());
+					loggerListener.textEmitted("Wrong Product ID extracted" + productid.text());
+					speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
+				}
 			}
 	
 			//product title
@@ -108,7 +126,12 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 			if(elementIcon != null)
 				bufWriter.printNode("icon", elementIcon.attr("src"));
 			else
+			{
 				logger.info("No Icon found: " + url);
+				loggerListener.textEmitted("No Icon found: " + url);
+				statusListener.textEmitted(this.getCrawlerStatus().toString());
+				speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
+			}
 			
 			//Get price information
 			Element price = doc.select("div.p-price > font").first();
@@ -124,6 +147,9 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 			URLResultResource urlresult = distributedURLRetriver.getUrlSource(imageurl);
 			if(urlresult == null) {
 				logger.info("Product document get error: " + imageurl);
+				loggerListener.textEmitted("Product document get error: " + imageurl);
+				statusListener.textEmitted(this.getCrawlerStatus().toString());
+				speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 				return;
 			}
 			
@@ -134,7 +160,12 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 			if(imgElement != null)
 				bufWriter.printNode("bigimg", imgElement.attr("src"));
 			else
+			{
 				logger.info("No image found: " + imageurl);
+				loggerListener.textEmitted("No image found: " + imageurl);
+				statusListener.textEmitted(this.getCrawlerStatus().toString());
+				speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
+			}
 			imghtml = null;
 		}
 
@@ -144,10 +175,14 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 			String reviewurl = "http://club.jd.com/review/" + productid_str + "-0-" + 1 + "-0.html";
 			
 			logger.info(reviewurl);
+			statusListener.textEmitted(this.getCrawlerStatus().toString());
 			
 			URLResultResource urlresult = distributedURLRetriver.getUrlSource(reviewurl);
 			if(urlresult == null) {
 				logger.info("Comment first page get error: " + reviewurl);
+				loggerListener.textEmitted("Comment first page get error: " + reviewurl);
+				statusListener.textEmitted(this.getCrawlerStatus().toString());
+				speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 				return;
 			}
 			
@@ -176,7 +211,9 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 			} 
 				
 			logger.info("comment_pages: " + comment_pages + " " + comment_pages_num);
-			
+			loggerListener.textEmitted("comment_pages: " + comment_pages + " " + comment_pages_num);
+			statusListener.textEmitted(this.getCrawlerStatus().toString());
+			speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 			//To browse all the comment pages
 			bufWriter.write("<comments>");
 			for(int p=1; p<comment_pages_num && p<30; p++) {
@@ -187,10 +224,15 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 				reviewurl = "http://club.jd.com/review/" + productid_str + "-0-" + p + "-0.html";
 				
 				logger.info(reviewurl);
+				statusListener.textEmitted(this.getCrawlerStatus().toString());
+				loggerListener.textEmitted(reviewurl);
+				speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 
 				urlresult = distributedURLRetriver.getUrlSource(reviewurl);
 				if(urlresult == null) {
 					logger.info("Comments document get error: " + reviewurl);
+					loggerListener.textEmitted("Comments document get error: " + reviewurl);
+					speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
 					continue;
 				}
 				
@@ -207,7 +249,12 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 						if(userElement != null)
 							bufWriter.printNode("user_url", userElement.attr("href"));	
 						else
+						{
 							logger.info("No comments user found @: " + reviewurl);
+							loggerListener.textEmitted("No comments user found @: " + reviewurl);
+							statusListener.textEmitted(this.getCrawlerStatus().toString());
+							speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
+						}
 						
 						//tags
 						Elements c_tag= c.select("div.comment-content dd > span");
@@ -223,7 +270,12 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 						if(usrCommentElement != null)
 							bufWriter.printNode("learn", usrCommentElement.text());	
 						else
+						{
 							logger.info("No comments found @: " + reviewurl);
+							loggerListener.textEmitted("No comments found @: " + reviewurl);
+							statusListener.textEmitted(this.getCrawlerStatus().toString());
+							speedListener.textEmitted("Time Passed: " + getTimer() + " sec");
+						}
 
 						bufWriter.write("</comment>");
 					}			
@@ -238,5 +290,6 @@ public class CrawlerJDMobileProductCommentsWithTag extends CrawlerWorker {
 		//File can be rolled over to new one if the size is bigger than threshold at this point
 		xmlWriter.write(bufWriter.getDoc(), true, "</docs>", "<docs>");
 	}
+
 	
 }

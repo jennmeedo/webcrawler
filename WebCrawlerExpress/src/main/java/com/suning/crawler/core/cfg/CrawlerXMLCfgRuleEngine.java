@@ -7,7 +7,10 @@ import java.util.regex.Pattern;
 
 import org.slf4j.Logger;
 
+import com.suning.crawler.helper.StringListener;
+
 public class CrawlerXMLCfgRuleEngine extends CrawlerXMLCfgReader{
+	
 	public CrawlerXMLCfgRuleEngine(String xmlFileName, Logger logger) {
 		super(xmlFileName, logger);
 	}
