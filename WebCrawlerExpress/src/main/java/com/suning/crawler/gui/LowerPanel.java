@@ -5,6 +5,7 @@ import java.awt.TextArea;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
+
 public class LowerPanel extends JPanel {
 	
 	private TextArea textArea;
@@ -13,7 +14,13 @@ public class LowerPanel extends JPanel {
 	{
 		textArea = new TextArea();
 		setLayout(new BorderLayout());
-		add(new JScrollPane(textArea),BorderLayout.CENTER);
+		add(new JScrollPane(textArea,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER),BorderLayout.CENTER);
+	}
+	
+	
+	public TextArea getTextArea()
+	{
+		return textArea;
 	}
 
 }

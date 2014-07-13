@@ -1,3 +1,4 @@
+package com.suning.crawler.gui;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -17,6 +18,7 @@ public class LeftPanel extends JPanel {
 	private JTextField speedValueTextField;
 	private JLabel seedLabel;
 	private JTextField seedValueTextField;
+	
 	
 	
 	public LeftPanel()
@@ -52,6 +54,7 @@ public class LeftPanel extends JPanel {
 		seedLabel = new JLabel("Seed: ");
 		seedValueTextField = new JTextField(10);
 		
+	
 		setLayout(new GridBagLayout());
 		GridBagConstraints gc = new GridBagConstraints();
 		
@@ -83,7 +86,7 @@ public class LeftPanel extends JPanel {
 		gc.gridx = 0;
 		gc.gridy = 2;
 		gc.weightx = 1;
-		gc.weighty = 2;
+		gc.weighty = 5;
 		gc.anchor = GridBagConstraints.FIRST_LINE_END;
 		add(seedLabel,gc);
 		
@@ -91,6 +94,10 @@ public class LeftPanel extends JPanel {
 		gc.gridy = 2;
 		gc.anchor = GridBagConstraints.FIRST_LINE_START;
 		add(seedValueTextField,gc);
+		
+		
+		
+		
 		
 		
 	}

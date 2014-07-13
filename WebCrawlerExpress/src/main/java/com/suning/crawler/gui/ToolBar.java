@@ -1,3 +1,4 @@
+package com.suning.crawler.gui;
 import javax.swing.JPanel;
 
 
