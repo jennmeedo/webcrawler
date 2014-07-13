@@ -112,7 +112,7 @@ public class MainWindow extends JFrame {
 				int templateID = e.getTemplateID();
 				lowerPanel.getTextArea().append("Template Name = " + templateName + "\n");
 				lowerPanel.getTextArea().append("Template ID = " + templateID + "\n");
-				controller = new CrawlerController(templateName, templateID);
+				controller = new CrawlerController(templateName, templateID,leftPanel.getSeedValueTextField());
 				controller.addLoggerListener(new StringListener()
 				{
 					public void textEmitted(String text) {
@@ -127,12 +127,12 @@ public class MainWindow extends JFrame {
 					}
 				});
 				
-//				controller.addSeedListener(new StringListener()
-//				{
-//					public void textEmitted(String text) {
-//						leftPanel.getSeedValueTextField().setText(text);
-//					}
-//				});
+				controller.addSeedListener(new StringListener()
+				{
+					public void textEmitted(String text) {
+						leftPanel.getSeedValueTextField().setText(text);
+					}
+				});
 				
 				controller.addStatusListener(new StringListener()
 				{

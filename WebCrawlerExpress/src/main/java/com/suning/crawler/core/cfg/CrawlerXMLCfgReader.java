@@ -31,7 +31,7 @@ import com.suning.crawler.helper.StringListener;
 public class CrawlerXMLCfgReader {
 	Logger logger;
 	Document xmlDoc;
-	StringListener listener;
+	StringListener seedListener;
 	
 	public CrawlerXMLCfgReader(String xmlFileName, Logger logger) {
 		
@@ -87,7 +87,11 @@ public class CrawlerXMLCfgReader {
 				String seedStr = seedElement.getText();
 				if(seedStr.length() > 0)
 					seedsSet.add(seedStr);
-				logger.info("Seed: " + seedStr );				
+				logger.info("Seed: " + seedStr );
+				if(seedListener != null)
+				{
+					seedListener.textEmitted(seedStr);
+				}
 			} else {
 				logger.info("Wrong Element Name: " + seedName);
 			}
@@ -132,6 +136,6 @@ public class CrawlerXMLCfgReader {
 	
 	public void setSeedListener(StringListener listener)
 	{
-		this.listener = listener;
+		this.seedListener = listener;
 	}
 }

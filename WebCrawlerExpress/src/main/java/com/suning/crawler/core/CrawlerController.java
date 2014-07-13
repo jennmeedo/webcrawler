@@ -2,6 +2,10 @@ package com.suning.crawler.core;
 
 
 
+import java.awt.TextArea;
+
+import javax.swing.JTextArea;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,15 +27,18 @@ public class CrawlerController implements Runnable {
 	private StringListener loggerListener;
 	private StringListener statusListener;
 	private StringListener speedListener;
+	private StringListener seedListener;
+	static private JTextArea seedArea;
 
 	/**
 	 * 
 	 * @param name
 	 * @param id
 	 */
-	public CrawlerController(String name, int id) {
+	public CrawlerController(String name, int id, final JTextArea seedArea) {
 
 		crawlerName = name;
+		this.seedArea = seedArea;
 		switch (id) {
 		case 1:
 			crawlerWorker = new CrawlerJDMobileProductCommentsWithTag(
@@ -76,7 +83,17 @@ public class CrawlerController implements Runnable {
 				speedListener.textEmitted(text);
 			}
 		});
-		//pageFileManager.deserialize();
+		
+		
+        crawlerWorker.addSeedListener(new StringListener() {
+			
+			@Override
+			public void textEmitted(String text) {
+				// TODO Auto-generated method stub
+				seedArea.setText(text);
+			}
+		});
+      
 		crawlerWorker.initCrawler();
 	}
 
@@ -133,4 +150,15 @@ public class CrawlerController implements Runnable {
 		loggerListener.textEmitted("Stoping job has been triggred");
 		
 	}
+	
+	
+	public void addSeedListener(StringListener s)
+	{
+		this.seedListener = seedListener;
+	}
+	
+	
 }
+
+
+   

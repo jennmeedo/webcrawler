@@ -94,6 +94,7 @@ public abstract class CrawlerWorker implements ICrawlerWorker{
 			synchronized(this) {
 				seeds.add(s);
 				crawlerStatus.seededUrls ++;
+				seedListener.textEmitted(s);
 			}
 		}
 	}	        		
